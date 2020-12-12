@@ -1,0 +1,27 @@
+
+<mat-spinner *ngIf="loading"></mat-spinner>
+<mat-toolbar *ngIf="successMsg" color="accent">{{ successMsg }}</mat-toolbar>
+<mat-toolbar *ngIf="errorMsg" color="warn">{{ errorMsg }}</mat-toolbar>
+
+<div *ngIf="!loading && !loading">
+    <table mat-table [dataSource]="moods" class="mat-elevation-z8">
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Date</th>
+            <td mat-cell *matCellDef="let mood"> {{ mood.date | date:'MM/dd/yyyy'}} </td>
+        </ng-container>
+        <ng-container matColumnDef="mood">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let mood"> {{ mood.mood }}</td>
+        </ng-container>
+        <ng-container matColumnDef="details">
+            <th mat-header-cell *matHeaderCellDef>Details</th>
+            <td mat-cell *matCellDef="let mood"> {{ mood.details }}</td>
+        </ng-container>
+        <ng-container matColumnDef="kill">
+            <th mat-header-cell *matHeaderCellDef>Choices</th>
+            <td mat-cell *matCellDef="let mood"><button (click)="cancelMood(mood._id)" mat-raised-button color="warn">Kill Mood</button></td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let moods; columns: columns"></tr>
+    </table>           
+</div>

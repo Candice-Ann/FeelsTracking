@@ -1,6 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppointmentListComponent } from './appointment-list/appointment-list.component';
+import { MoodLogComponent } from './mood-log/mood-log.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -9,8 +10,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'appointment-list',
-    component: AppointmentListComponent,
+    path: 'mood-log',
+    component: MoodLogComponent,
   }
 ];
 
