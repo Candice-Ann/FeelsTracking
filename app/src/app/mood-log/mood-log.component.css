@@ -1,4 +1,15 @@
 table {
     margin-top: 50px;
     width: 100%;
+    font-size: 48;
+    font-family: 'Permanent Marker', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+}
+button {
+    font-family: 'Permanent Marker', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+}
+.mat-h1, .mat-headline, .mat-typography h1 {
+    font: 'Permanent Marker', cursive !important;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');  
 }

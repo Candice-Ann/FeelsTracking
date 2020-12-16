@@ -15,29 +15,21 @@ export class MoodComponent implements OnInit {
   public date: string = '';
   public mood: string = '';
   public details: string = '';
-  // public moodOptions: any[] = [
-  //   {mood: "good"},
-  //   {mood: "okay"},
-  //   {mood: "blah"},
-  //   {mood: "terrible"}
-  // ];
-  
 
   constructor(private moodService: MoodService) { }
 
   ngOnInit(): void {
   }
   createMood() {
-    //this.date = concatenated string of date
+    this.date = Date.now().toString();
     this.successMsg = '';
     this.errorMsg = '';
     this.moodService.createMood(this.date, this.mood, this.details)
       .subscribe((createdMood: Mood) => {
+        this.successMsg = `Your mood has been saved!`;
         this.date= '';
         this.mood = '';
         this.details = '';
-        const date = new Date(createdMood.date).toDateString();
-        this.successMsg = `Mood created successfully ${date}`;
       },
       (error: ErrorEvent) => {
         this.errorMsg= error.error.message;

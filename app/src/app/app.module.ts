@@ -18,6 +18,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MoodComponent } from './mood/mood.component';
 import { MoodLogComponent } from './mood-log/mood-log.component';
 import { HomeComponent } from './home/home.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
   
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     HttpClientModule,
     FormsModule,
+    MatMenuModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

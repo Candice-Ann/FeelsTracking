@@ -3,20 +3,14 @@
 <mat-toolbar *ngIf="errorMsg" color="warn">{{ errorMsg }}</mat-toolbar>
 
 <div class="form-container">
-    <form (submit)="createMood()">
-        <mat-form-field>
-            <input [(ngModel)]="date" name="date" matInput [matDatepicker]="picker" placeholder="Choose a date">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>    
-        </mat-form-field>
-        
+    <form (submit)="createMood()">        
         <mat-form-field appearance="fill">
             <mat-label>Mood</mat-label>
             <select [(ngModel)]="mood" name="mood" placeholder="Choose a Feel" matNativeControl required>
-                    <option value="good">Good</option>
+                    <option value="gucci">Gucci</option>
                     <option value="okay">Okay</option>
                     <option value="blah">Blah</option>
-                    <option value="terrible">Terrible</option>
+                    <option value="Ugh, terrible">Ugh, Terrible</option>
             </select>
           </mat-form-field>
         <mat-form-field>

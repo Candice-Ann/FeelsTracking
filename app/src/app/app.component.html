@@ -1,10 +1,20 @@
+<head>
+  <link rel="stylesheet" href="app.component.css">
+</head>
 
-<span>
-  <a routerLink="/"><button mat-raised-button color="accent">What's Your Mood?</button></a>
-  <a routerLink="/mood-log"><button mat-raised-button color="accent">View Mood Log</button></a>
-</span>
+<button mat-button [matMenuTriggerFor]="menu">FEELS</button>
+<mat-menu #menu="matMenu">
+  <a class="link" routerLink="/"><button mat-menu-item>Add Mood Entry</button></a>
+  <a class="link" routerLink="/mood-log"><button mat-menu-item>View Mood Log</button></a>
+</mat-menu>
 
 <div class="container">
-  <h1>Mood Tracking</h1>
+ 
+  <div class="title">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
+    Track Them Feels
+  </div>
   <router-outlet></router-outlet>
 </div>
