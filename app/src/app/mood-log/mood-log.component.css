@@ -13,3 +13,7 @@ button {
     font: 'Permanent Marker', cursive !important;
     src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');  
 }
+.mat-toolbar {
+    max-width: fit-content;
+    color: "primary";
+}

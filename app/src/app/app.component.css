@@ -8,7 +8,17 @@
 }
 
 .title {
-    font-size: x-large;  
+    font-size: x-large; 
+    padding-bottom: 2rem; 
 }
-
+.footer1 {
+padding-top: 5rem;
+font-size: 72px;
+padding-left: 6rem;
+}
+.footer2 {
+font-size: 31px;
+padding-left: 6rem;
+padding-top: 1rem;
+}
 
