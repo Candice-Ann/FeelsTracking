@@ -20,13 +20,17 @@ import { MoodLogComponent } from './mood-log/mood-log.component';
 import { HomeComponent } from './home/home.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
-  
+import { MoodPieComponent } from './mood-pie/mood-pie.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { MoodVisualizerComponent } from './mood-visualizer/mood-visualizer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent, 
     MoodComponent,
-    MoodLogComponent
+    MoodLogComponent,
+    MoodPieComponent,
+    MoodVisualizerComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     MatMenuModule,
     MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

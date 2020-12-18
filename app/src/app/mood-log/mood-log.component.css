@@ -16,4 +16,17 @@ button {
 .mat-toolbar {
     max-width: fit-content;
     color: "primary";
+    animation-name: hide;
+    animation-duration: 4s, 4s;
+    animation-iteration-count: 1;
+}
+@keyframes hide {
+    from {
+        max-width: fit-content;
+        color: primary;
+    }
+    to{
+        width: 0px;
+        display: block;
+    }
 }

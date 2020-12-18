@@ -19,6 +19,17 @@ form {
     color: green;
 }
 .mat-toolbar {
-    max-width: fit-content;
+    max-width: 17.5em;
     color: "primary";
+    animation-name: hide;
+    animation-duration: 1s, 0s;
 }
+@keyframes hide { 
+    from {
+        display: visible;
+    }
+    to {
+        display: none;
+    }
+}
+

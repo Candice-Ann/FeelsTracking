@@ -18,6 +18,8 @@ export class MoodComponent implements OnInit {
 
   constructor(private moodService: MoodService) { }
 
+
+
   ngOnInit(): void {
   }
   createMood() {
@@ -35,6 +37,4 @@ export class MoodComponent implements OnInit {
         this.errorMsg= error.error.message;
       })
   }
-  //getDate function (create to get system date, builds date, returns concatenated string)
-  //be sure to delete HTML for datePicker
 }

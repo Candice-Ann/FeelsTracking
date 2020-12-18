@@ -18,7 +18,7 @@ export class MoodLogComponent implements OnInit {
   public columns = ['date', 'mood', 'details', 'kill'];
 
   constructor(private moodService: MoodService) { }
-
+//gets mood and passes mood back
   ngOnInit() {
     this.moodService.getMood()
       .subscribe((moods: Mood[]) => {
