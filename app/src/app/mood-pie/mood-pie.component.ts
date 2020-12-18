@@ -41,7 +41,7 @@ export class MoodPieComponent implements OnInit {
   private createColors(): void {
     this.colors = d3.scaleOrdinal()
     .domain(this.data.map(d => d.Count.toString()))
-    .range(["#4a389c", "#7a6cba", "#c5bfe0", "#3d1dcc", "#8fb6db"]);
+    .range(["#3f51b5", "#FF4081", "#705a8f", "#F44336"]);
   }
   private drawChart(): void {
     // Compute the position of each group on the pie:

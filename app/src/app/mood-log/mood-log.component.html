@@ -3,6 +3,8 @@
 <mat-toolbar *ngIf="successMsg"color="warn">{{ successMsg }}</mat-toolbar>
 <mat-toolbar *ngIf="errorMsg" color="warn">{{ errorMsg }}</mat-toolbar>
 
+<h1>mood log</h1>
+
 <div *ngIf="!loading && !loading">
     <table mat-table [dataSource]="moods" class="mat-elevation-z8">
         <ng-container matColumnDef="date">

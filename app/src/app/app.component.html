@@ -2,12 +2,20 @@
   <link rel="stylesheet" href="app.component.css">
 </head>
 
-<button mat-button [matMenuTriggerFor]="menu">FEELS</button>
+<div class="logo">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  </style> 
+  <h1>FEELS</h1>
+  <h2>mood tracking</h2>
+   </div>
+
+
+<button mat-button [matMenuTriggerFor]="menu">MENU</button>
 <mat-menu #menu="matMenu">
   <a class="link" routerLink="/"><button mat-menu-item>Add Mood Entry</button></a>
   <a class="link" routerLink="/mood-log"><button mat-menu-item>Mood Report</button></a>
   <a class="link" routerLink="/mood-visualizer"><button mat-menu-item>Mood Stats</button></a>
-
 </mat-menu>
 
 <div class="container">
@@ -15,20 +23,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
     </style>
-    Choose Your Mood
+     
   </div>
   <router-outlet></router-outlet>
 </div>
-
-<div class="footer1">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-</style>
-FEELS
-</div>
-<div class="footer2">
-  <style>
-    
-  </style>
-  mood tracking
-  </div>

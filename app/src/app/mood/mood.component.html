@@ -2,6 +2,8 @@
 <mat-toolbar *ngIf="successMsg" color="primary">{{ successMsg }}</mat-toolbar>
 <mat-toolbar *ngIf="errorMsg" color="warn">{{ errorMsg }}</mat-toolbar>
 
+<h1>choose your feel</h1>
+
 <div class="form-container">
     <form (submit)="createMood()">        
         <mat-form-field appearance="fill">
@@ -19,6 +21,7 @@
         <button mat-raised-button color="primary">Log Them Feels</button>
     </form>
 </div>
+
 
 
 

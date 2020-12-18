@@ -1,0 +1,16 @@
+
+h2 {
+    position: fixed;
+    top: 18%;
+    left: 11%;
+    font-size: 57px;
+    font-family: 'Permanent Marker';
+}
+
+#pie {
+    position: fixed;
+    left: -5%;
+    top: 19%;
+    font-size: large;
+    font-family: 'Chau Philomene One', sans-serif;
+}

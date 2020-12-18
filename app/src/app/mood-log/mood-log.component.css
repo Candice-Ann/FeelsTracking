@@ -1,32 +1,35 @@
 table {
+    position: fixed;
+    top: 23%;
+    left: 13%;
     margin-top: 50px;
-    width: 100%;
-    font-size: 48;
-    font-family: 'Permanent Marker', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    width: 55%;
+    font-size: 40px;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-weight: bold;
 }
+
+h1 {
+    position: fixed;
+    top: 23%;
+    left: 13%;
+    font-size: 57px;
+    font-family: 'Permanent Marker';
+}
+
 button {
     font-family: 'Permanent Marker', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 }
+
 .mat-h1, .mat-headline, .mat-typography h1 {
     font: 'Permanent Marker', cursive !important;
     src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');  
 }
+
 .mat-toolbar {
     max-width: fit-content;
     color: "primary";
-    animation-name: hide;
-    animation-duration: 4s, 4s;
-    animation-iteration-count: 1;
-}
-@keyframes hide {
-    from {
-        max-width: fit-content;
-        color: primary;
-    }
-    to{
-        width: 0px;
-        display: block;
-    }
+    position: fixed;
+    top: 13%;
 }
